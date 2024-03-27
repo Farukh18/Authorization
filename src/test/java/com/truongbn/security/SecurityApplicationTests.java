@@ -1,10 +1,10 @@
-package com.bebra.authorization;
+package com.truongbn.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AuthorizationApplicationTests {
+class SecurityApplicationTests {
 
 	@Test
 	void contextLoads() {

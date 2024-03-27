@@ -1,29 +1,74 @@
-INSERT INTO users (first_name, last_name, email, password, role)
-VALUES ('Ivan', 'Ivanov', 'ivan.ivanov@email.com', 'password123', 'admin'),
-       ('Anna', 'Petrova', 'anna.petrova@email.com', 'password123', 'user'),
-       ('Nikolay', 'Sidorov', 'nikolay.sidorov@email.com', 'password123', 'user');
-
-INSERT INTO tasks (name, describe, status, owner)
-VALUES ('Task 1', 'Description for Task 1', 'NEW', 1),
-       ('Task 2', 'Description for Task 2', 'IN_PROGRESS', 1),
-       ('Task 3', 'Description for Task 3', 'COMPLETED', 2);
-
-INSERT INTO users (first_name, last_name, email, password, role)
-VALUES ('Sergey', 'Nikolaev', 'sergey.nikolaev@email.com', 'password123', 'admin'),
-       ('Maria', 'Vasilyeva', 'maria.vasilyeva@email.com', 'password123', 'user'),
-       ('Alexey', 'Morozov', 'alexey.morozov@email.com', 'password123', 'user'),
-       ('Olga', 'Semenova', 'olga.semenova@email.com', 'password123', 'user'),
-       ('Dmitry', 'Kozlov', 'dmitry.kozlov@email.com', 'password123', 'user');
-
-
-INSERT INTO tasks (name, describe, status, owner)
-VALUES ('Task 4', 'Description for Task 4', 'NEW', 4),
-       ('Task 5', 'Description for Task 5', 'IN_PROGRESS', 4),
-       ('Task 6', 'Description for Task 6', 'COMPLETED', 5),
-       ('Task 7', 'Description for Task 7', 'COMPLETED', 5),
-       ('Task 8', 'Description for Task 8', 'IN_PROGRESS', 6),
-       ('Task 9', 'Description for Task 9', 'NEW', 6),
-       ('Task 10', 'Description for Task 10', 'IN_PROGRESS', 7),
-       ('Task 11', 'Description for Task 11', 'NEW', 8),
-       ('Task 12', 'Description for Task 12', 'COMPLETED', 8),
-       ('Task 13', 'Description for Task 13', 'NEW', 3);
+-- INSERT INTO users (first_name, last_name, email, password, role)
+-- VALUES ('Ivan', 'Ivanov', 'ivan.ivanov@email.com', 'password123', 'admin'),
+--        ('Anna', 'Petrova', 'anna.petrova@email.com', 'password123', 'user'),
+--        ('Nikolay', 'Sidorov', 'nikolay.sidorov@email.com', 'password123', 'user');
+--
+-- INSERT INTO tasks (name, describe, status, owner)
+-- VALUES ('Task 1', 'Description for Task 1', 'NEW', 1),
+--        ('Task 2', 'Description for Task 2', 'IN_PROGRESS', 1),
+--        ('Task 3', 'Description for Task 3', 'COMPLETED', 2);
+--
+-- INSERT INTO users (first_name, last_name, email, password, role)
+-- VALUES ('Sergey', 'Nikolaev', 'sergey.nikolaev@email.com', 'password123', 'admin'),
+--        ('Maria', 'Vasilyeva', 'maria.vasilyeva@email.com', 'password123', 'user'),
+--        ('Alexey', 'Morozov', 'alexey.morozov@email.com', 'password123', 'user'),
+--        ('Olga', 'Semenova', 'olga.semenova@email.com', 'password123', 'user'),
+--        ('Dmitry', 'Kozlov', 'dmitry.kozlov@email.com', 'password123', 'user');
+--
+--
+-- INSERT INTO tasks (name, describe, status, owner)
+-- VALUES ('Task 4', 'Description for Task 4', 'NEW', 4),
+--        ('Task 5', 'Description for Task 5', 'IN_PROGRESS', 4),
+--        ('Task 6', 'Description for Task 6', 'COMPLETED', 5),
+--        ('Task 7', 'Description for Task 7', 'COMPLETED', 5),
+--        ('Task 8', 'Description for Task 8', 'IN_PROGRESS', 6),
+--        ('Task 9', 'Description for Task 9', 'NEW', 6),
+--        ('Task 10', 'Description for Task 10', 'IN_PROGRESS', 7),
+--        ('Task 11', 'Description for Task 11', 'NEW', 8),
+--        ('Task 12', 'Description for Task 12', 'COMPLETED', 8),
+--        ('Task 13', 'Description for Task 13', 'NEW', 3);
+-- INSERT INTO users (first_name, last_name, email, password, role)
+-- VALUES ('Elena', 'Ivanova', 'elena.ivanova@email.com', 'securePass1', 'user'),
+--        ('Pavel', 'Zaitsev', 'pavel.zaitsev@email.com', 'securePass2', 'user'),
+--        ('Natalia', 'Petrova', 'natalia.petrova@email.com', 'securePass3', 'user'),
+--        ('Viktor', 'Sokolov', 'viktor.sokolov@email.com', 'securePass4', 'user'),
+--        ('Ksenia', 'Sergeeva', 'ksenia.sergeeva@email.com', 'securePass5', 'user'),
+--        ('Maxim', 'Kozlov', 'maxim.kozlov@email.com', 'securePass6', 'user'),
+--        ('Svetlana', 'Kuznetsova', 'svetlana.kuznetsova@email.com', 'securePass7', 'user'),
+--        ('Anton', 'Fedorov', 'anton.fedorov@email.com', 'securePass8', 'user'),
+--        ('Larisa', 'Morozova', 'larisa.morozova@email.com', 'securePass9', 'user'),
+--        ('Vladimir', 'Smirnov', 'vladimir.smirnov@email.com', 'securePass10', 'user');
+-- INSERT INTO users (first_name, last_name, email, password, role)
+-- VALUES ('Lyubov', 'Kuznetsova', 'lyubov.kuznetsova@email.com', 'myPassword11', 'user'),
+--        ('Andrey', 'Voronov', 'andrey.voronov@email.com', 'myPassword12', 'user'),
+--        ('Olesya', 'Gorbunova', 'olesya.gorbunova@email.com', 'myPassword13', 'user'),
+--        ('Grigoriy', 'Rasputin', 'grigoriy.rasputin@email.com', 'myPassword14', 'admin'),
+--        ('Tatyana', 'Romanova', 'tatyana.romanova@email.com', 'myPassword15', 'user'),
+--        ('Igor', 'Nikitin', 'igor.nikitin@email.com', 'myPassword16', 'user'),
+--        ('Yulia', 'Savicheva', 'yulia.savicheva@email.com', 'myPassword17', 'user'),
+--        ('Mikhail', 'Lermontov', 'mikhail.lermontov@email.com', 'myPassword18', 'user'),
+--        ('Kira', 'Plastinina', 'kira.plastinina@email.com', 'myPassword19', 'user'),
+--        ('Lev', 'Tolstoy', 'lev.tolstoy@email.com', 'myPassword20', 'admin');
+--
+-- INSERT INTO tasks (name, describe, status, owner)
+-- VALUES ('Market Analysis', 'Perform a comprehensive market analysis for product Y', 'PLANNED', 19),
+--        ('Feature Spec', 'Write up the specifications for the new features', 'IN_PROGRESS', 20),
+--        ('Contract Negotiation', 'Negotiate new contract terms with suppliers', 'NEW', 21),
+--        ('Team Meeting', 'Weekly team meeting to discuss project progress', 'PLANNED', 22),
+--        ('Data Migration', 'Migrate old customer data to the new system', 'IN_PROGRESS', 23),
+--        ('Hiring Interviews', 'Conduct interviews for the marketing position', 'NEW', 24),
+--        ('Training Module', 'Develop a new training module for sales team', 'COMPLETED', 25),
+--        ('Budget Planning', 'Plan the budget for the next financial year', 'IN_PROGRESS', 26),
+--        ('App Development', 'Continue development of the mobile application', 'NEW', 27),
+--        ('Office Renovation', 'Oversee the office renovation project', 'PLANNED', 28),
+--        ('Customer Feedback', 'Compile customer feedback for the quarter', 'IN_PROGRESS', 19),
+--        ('Software Debugging', 'Debug the reported issues in the software', 'COMPLETED', 20),
+--        ('Branding Strategy', 'Devise a new branding strategy for the company', 'NEW', 21),
+--        ('Website Optimization', 'Optimize the website for better performance', 'PLANNED', 22),
+--        ('Team Outing', 'Organize a team outing for team building', 'IN_PROGRESS', 23),
+--        ('Document Archiving', 'Archive all outdated documents', 'NEW', 24),
+--        ('Sales Forecast', 'Prepare the sales forecast report for next quarter', 'COMPLETED', 25),
+--        ('Product Launch', 'Plan the launch event for the new product', 'PLANNED', 26),
+--        ('Customer Survey', 'Design and conduct a survey for customer satisfaction', 'NEW', 27),
+--        ('Policy Update', 'Update company policies according to new regulations', 'IN_PROGRESS', 28);
+--

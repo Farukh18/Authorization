@@ -1,2 +1,7 @@
-package com.truongbn.security.entities;public class Status {
+package com.truongbn.security.entities;
+
+public enum Status {
+    NEW,
+    IN_PROGRESS,
+    DONE
 }
